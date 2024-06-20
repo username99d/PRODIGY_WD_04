@@ -1,0 +1,300 @@
+body {
+    margin-top: 15px;
+    padding: 0;
+    background:  url('fl.jpg') #FFCFD2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxes, .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.blos {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
+.blos2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.blos2 img {
+    width: 120vw;
+    height: 120vh;
+    object-fit: cover;
+    margin-top: 50%;
+}
+.blos img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.title {
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: 200;
+    color: white;
+    text-shadow: 3px 2px 2px rgb(206, 247, 111);
+    border-radius: 20px;
+    background-color: rgb(247, 187, 255);
+    margin: 5px 10px;
+    background-image: url('relative-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    transition: color 0.7s ease;
+}
+
+.title:hover {
+    color: rgb(162, 237, 104);
+}
+
+span {
+    color: rgb(236, 154, 66);
+    background-color: rgb(247, 187, 255);
+}
+
+span:hover {
+    color: white;
+}
+
+
+.imh i {
+    color: #ef98c6;
+    font-size: 7rem;
+    position: relative;
+}
+
+.imh i:hover {
+    color: rgb(236, 154, 66);
+    transition: color 0.7s ease;
+}
+
+.fol {
+    display: inline-flex;
+    margin: 10px 0 0 10px;
+}
+
+
+.container {
+    display: inline-flex;
+    list-style: none;
+    border-radius: 30px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    background-color: #553E4E;
+    padding-bottom: 10px;
+}
+
+
+.button-container {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #553E4E;
+    margin: 80px 0 0 280px;
+    word-spacing: 30px;
+}
+
+.button-container button {
+    display: inline-block;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2px 20px;
+    border-radius: 15px;
+    background-color: rgb(212, 153, 44);
+    margin: 18px 10px 0 10px;
+    box-shadow: 3px 2px 3px white;
+}
+
+.me button {
+    background-color: #9EBC9E;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px black;
+}
+
+.me button:hover {
+    background-color: white;
+    color: black;
+}
+
+.aboutme button {
+    background-color: #FFAFC5;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px white;
+    display: flex;
+}
+
+.aboutme button:hover {
+    background-color: white;
+    color: black;
+}
+
+.cont button {
+    background-color: #9EBC9E;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px white;
+}
+
+.cont button:hover {
+    background-color: white;
+    color: black;
+}
+
+.wor button {
+    background-color: #FFAFC5;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px white;
+}
+
+.wor button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.moving-image {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 13.5%;
+    left: 50%;
+    transform: translateY(-50%);
+    animation: moveHorizontally 3s linear infinite;
+    size: 70px;
+}
+
+@keyframes moveHorizontally {
+    0% {
+        left: 20%;
+    }
+    100% {
+        left: 80%;
+    }
+}
+
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+.mathi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fst, .snd, .trd, .fth {
+    padding: 20px;
+    margin: 20px;
+    height: 300px;
+    background-color: #f0f0f0;
+    box-shadow: 10px 10px 20px #ff79c7;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    
+}
+
+.fst, .snd, .trd {
+    width: 30%;
+    height:31%;
+}
+
+.fst:hover, .snd:hover, .trd:hover, .fth:hover {
+    background-color: #9EBC9E;
+    box-shadow: 2px 2px 2px yellow;
+}
+
+.fst {
+    transform: skew(-4deg);
+    margin-top: 20%;
+    margin-left: 4%;
+    background-color: #FFAFC5;
+}
+
+.snd {
+    transform: skew(0deg);
+    background-color: rgb(193, 149, 234);
+    margin-right: 5%;
+    transform: skew(5deg);
+}
+
+.trd {
+    transform: skew(-4deg);
+    margin-top: 25%;
+    background-color: #FFAFC5;
+   margin-top: 35%;
+}
+
+.fth {
+    width: 30%;
+    margin-bottom:40%;
+    background-color: rgb(193, 149, 234);
+    transform: skew(4deg);
+    margin-right: 5%;
+    height:31%;
+}
+.bich {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width:50%
+
+}
+.bich2{
+    position: absolute;
+    top: 200%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+.mathi .fst p,
+.mathi .snd p,
+.mathi .trd p,
+.mathi .fth p {
+    display: none;
+}
+
+.mathi .fst.visible p,
+.mathi .snd.visible p,
+.mathi .trd.visible p,
+.mathi .fth.visible p {
+    display: block;
+}
+
+
+.bich img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 43%;
+}
